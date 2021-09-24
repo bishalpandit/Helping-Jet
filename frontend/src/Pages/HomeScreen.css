@@ -2,7 +2,11 @@
 .header {
     font-family: 'Montserrat', sans-serif;
 }
+h1{
+    font-family: 'Montserrat', sans-serif;
 
+}
 .header-img {
     margin-top: -4rem;
+    margin-left: 3rem;
 }

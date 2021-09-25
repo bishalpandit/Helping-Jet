@@ -16,6 +16,7 @@ export default function Header() {
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#link">Volunteer</Nav.Link>
                             <Nav.Link href="#link">Partner</Nav.Link>
+                            <Nav.Link href="#link">Nearby NGO</Nav.Link>
                         </Nav>
                         <Nav className="ms-auto">
                             <Nav.Link href="#link"><Button className="rounded-pill btn-lg btn-info light">Donate</Button></Nav.Link>
@@ -29,10 +30,10 @@ export default function Header() {
                 <Row>
                 <h1 className="text-center mt-5 ">Helping Needy Elderly for their Welfare and Empowering them.</h1>
                     <Col>
-                        <Image className="header-img" src={HelpingOld1} height="500px" width="500px" />
+                        <Image className="header-img" src={HelpingOld1} height="450px" width="450px" />
                     </Col>
                     <Col>
-                        <Image className="header-img" src={HelpingOld2} height="500px" width="500px" />
+                        <Image className="header-img" src={HelpingOld2} height="450px" width="450px" />
                     </Col>
                 </Row>
             </Container>

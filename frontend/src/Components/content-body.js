@@ -20,7 +20,7 @@ function Content() {
                     <Image className="Community-image" src={Community} width="250px" height="250px" />
                 </div>
             </div>
-            <Carousel id="Review" className="bg-dark">
+            <Carousel id="Review" className="bg-primary">
                 <CarouselItem className="items text-light">
                     <p>This Website Helped me to find Medical Support by linking me to a Specific NGO and also they provided moral and social support to me.</p>
                     <small>-A Helped Elder</small>

@@ -16,6 +16,7 @@ export default function Header() {
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#link">Volunteer</Nav.Link>
                             <Nav.Link href="#link">Partner</Nav.Link>
+                            <Nav.Link href="#link">Nearby NGO</Nav.Link>
                         </Nav>
                         <Nav className="ms-auto">
                             <Nav.Link href="#link"><Button className="rounded-pill btn-lg btn-info light">Donate</Button></Nav.Link>

@@ -18,8 +18,7 @@ export default function Thanks() {
                         Spread the word to people so that you and us could make a better environment for everyone.
                     </p>
                 </div>
-                <div className="foot">
-                    <h1>Join our Community</h1>
+                <div>
                     <Foot />
                 </div>
             </Card>

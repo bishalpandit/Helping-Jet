@@ -134,7 +134,6 @@ p{
 /* Styling Thank you page */
 .Background{
     padding:10%;
-    /* background:; */
 }
 .Thank-content{
     display: flex;
@@ -148,10 +147,19 @@ p{
     text-align: center;
     text-align: 25px;
 }
-.foot{
+/* Creating footer */
+.Footer{
     display: flex;
     flex-direction: column;
     padding:5%;
+    gap:40px;
     align-items: center;
     justify-content: center;
+} 
+.all-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
 }
+/* Hovering over all icons */

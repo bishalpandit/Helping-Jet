@@ -17,7 +17,7 @@ export default function Navibar() {
                             <Nav.Link href="/maps">Nearby NGO</Nav.Link>
                         </Nav>
                         <Nav className="ms-auto">
-                            <Nav.Link href="#link"><Button className="rounded-pill btn-lg btn-info light">Donate</Button></Nav.Link>
+                            <Nav.Link href="https://pages.razorpay.com/pl_I2YcFN8rBp9lEC/view"><Button className="rounded-pill btn-lg btn-info light">Donate</Button></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

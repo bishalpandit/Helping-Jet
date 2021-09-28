@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 .header {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* #row{
     display: flex;
@@ -9,146 +9,171 @@
     align-items: center;
     justify-content: center;
 } */
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
-p{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-.Community-content{
-    display: flex;
-    word-wrap: break-word;
-    text-align: center;
-    justify-content: center ;
-    padding: 3%;
-}
-.Community-content p{
-    padding:5%;
-    text-align: justify;
-    font-size: 24px;
-    word-wrap: break-word;
-}
-.Community-image{
-    margin-top: -2rem;
-    
-}
-.Community{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 3rem;
-}
-.Mission{
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 3rem;
-}
-.Mission-content{
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    justify-content:center ;
-    padding:5%;
-    font-size: 24px;
-
+p {
+  font-family: "Ubuntu", sans-serif;
 }
 
-.Mission-image{
-    margin-top:-4rem;
+.Community-content {
+  display: flex;
+  word-wrap: break-word;
+  text-align: center;
+  justify-content: center;
+  padding: 3%;
 }
-#Main{
-    display: flex;
-    flex-direction: column;
-    column-gap: 3rem;
+.Community-content p {
+  padding: 5%;
+  text-align: justify;
+  font-size: 24px;
+  word-wrap: break-word;
 }
-#Review{
-    height:300px;
-    padding:7%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Community-image {
+  margin-top: -2rem;
 }
-.items{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left:10%;
-    padding-right:10%;
-    color:white;
-    margin-left: 4rem;
-    width:90%;    
+.Community {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.Mission {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.Mission-content {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+  padding: 5%;
+  font-size: 24px;
+}
 
+.Mission-image {
+  margin-top: -4rem;
+}
+#Main {
+  display: flex;
+  flex-direction: column;
+  column-gap: 3rem;
+}
+#Review {
+  height: 300px;
+  padding: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  margin-left: 4rem;
+  width: 90%;
 }
 
 /* for creating the 2 cards requesting blood and fund donation */
-.Request{
-    display: flex;
-    gap: 30px;
-    padding:3%;
-    text-align: center;
-    justify-content: center;
+.Request {
+  display: flex;
+  gap: 30px;
+  padding: 3%;
+  text-align: center;
+  justify-content: center;
 }
 .Request-Content {
-    font:20px;
-    font-weight: 500;
-    text-align: left;
-    /* color:red; */
-    padding :9%;
+  font: 20px;
+  font-weight: 500;
+  text-align: left;
+  /* color:red; */
+  padding: 9%;
 }
-.Request-Header{
-    font: 24px;
-    font-weight: 700;
-    text-align: center;
-    
+.Request-Heading {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cards {
+  padding: 1rem;
 }
 
 /* for the three cards to make about how we contribute */
-.About{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding:5%;
-    gap:50px;
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  gap: 50px;
 }
-.Work{
-    display: flex;
-    gap:40px;
-    text-align: center;
-    justify-content: center;
+.Work {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  justify-content: center;
 }
-.Work-Top{
-    text-align: center;
+.Work-Top {
+  text-align: center;
 }
 /* Styling Thank you page */
-.Background{
-    padding:10%;
-    /* background:; */
+.Background {
+  padding: 10%;
 }
-.Thank-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding:3%;
-    font-size: 20px;
+.Thank-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+  font-size: 20px;
 }
-.Thank-content h1{
-    text-align: center;
-    text-align: 25px;
+.Thank-content h1 {
+  text-align: center;
+  text-align: 25px;
 }
-.foot{
-    display: flex;
-    flex-direction: column;
-    padding:5%;
-    align-items: center;
-    justify-content: center;
+/* Creating footer */
+.Footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.all-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.initial {
+  color: black;
+}
+/* Hovering over all icons */
+.insta-icon:hover {
+  color: #c13584;
+}
+
+.fb-icon:hover {
+  color: #0a58ca;
+}
+
+.tw-icon:hover {
+  color: #1da1f2;
+}
+
+.yt-icon:hover {
+  color: #ff0000;
 }

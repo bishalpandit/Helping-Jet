@@ -28,6 +28,7 @@ p{
 }
 .Community-content p{
     padding:5%;
+    text-align: justify;
     font-size: 24px;
     word-wrap: break-word;
 }
@@ -53,7 +54,7 @@ p{
 .Mission-content{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: left;
     justify-content:center ;
     padding:5%;
     font-size: 24px;
@@ -85,4 +86,69 @@ p{
     margin-left: 4rem;
     width:90%;    
 
+}
+
+/* for creating the 2 cards requesting blood and fund donation */
+.Request{
+    display: flex;
+    gap: 30px;
+    padding:3%;
+    text-align: center;
+    justify-content: center;
+}
+.Request-Content {
+    font:20px;
+    font-weight: 500;
+    text-align: left;
+    /* color:red; */
+    padding :9%;
+}
+.Request-Header{
+    font: 24px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+/* for the three cards to make about how we contribute */
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5%;
+    gap:50px;
+}
+.Work{
+    display: flex;
+    gap:40px;
+    text-align: center;
+    justify-content: center;
+}
+.Work-Top{
+    text-align: center;
+}
+/* Styling Thank you page */
+.Background{
+    padding:10%;
+    /* background:; */
+}
+.Thank-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding:3%;
+    font-size: 20px;
+}
+.Thank-content h1{
+    text-align: center;
+    text-align: 25px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    padding:5%;
+    align-items: center;
+    justify-content: center;
 }

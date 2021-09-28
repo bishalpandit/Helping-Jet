@@ -73,11 +73,11 @@ function Content() {
             </p>
           </CardColumns>
           <CardDeck>
-            <a href="#">
+            <Link to="/blood-donate">
               <button type="button" className="btn btn-lg btn-danger">
                 Donate
               </button>
-            </a>
+            </Link>
           </CardDeck>
         </Card>
       </div>

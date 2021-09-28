@@ -9,14 +9,13 @@ export default function Header() {
         <div className="header">
             <Navibar />
             <Container>
-                
                 <Row>
-                <h1 className="text-center mt-5 ">Helping Needy Elderly for their Welfare and Empowering them.</h1>
-                    <Col>
-                        <Image className="header-img" src={HelpingOld1} height="450px" width="450px" />
+                    <h1 className="text-center mt-5 ">Helping Needy Elderly for their Welfare and Empowering them.</h1>
+                    <Col sm={12} md={6} lg={6} xl={6}>
+                        <Image className="header-img img-fluid" src={HelpingOld1} height="450px" width="450px" />
                     </Col>
-                    <Col>
-                        <Image className="header-img" src={HelpingOld2} height="450px" width="450px" />
+                    <Col sm={12} md={6} lg={6} xl={6}>
+                        <Image className="header-img img-fluid" src={HelpingOld2} height="450px" width="450px" />
                     </Col>
                 </Row>
             </Container>

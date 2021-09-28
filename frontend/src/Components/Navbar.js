@@ -22,7 +22,7 @@ export default function Navibar() {
                             <LinkContainer to="/volunteer">
                                 <Nav.Link >Volunteer</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/ngos">
+                            <LinkContainer to="/ngo-oldage">
                                 <Nav.Link>Nearby NGO</Nav.Link>
                             </LinkContainer>
                         </Nav>

@@ -1,7 +1,8 @@
 import HomeScreen from './Pages/HomeScreen';
-import MapsPage from './Pages/MapsPage';
+import NGOPage from './Pages/NGOPage';
 import Thanks from './Pages/ThanksPage';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import BloodDonation from './Pages/BloodDonation';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import React from "react"
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" component={HomeScreen} exact />
-        <Route path="/ngos" component={MapsPage} />
+        <Route path="/ngo-oldage" component={NGOPage} />
         <Route path="/thanks" component={Thanks} />
+        <Route path="/blood-donate" component={BloodDonation} />
       </Router>
     </div>
   );

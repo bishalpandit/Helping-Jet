@@ -8,6 +8,7 @@ import Medical from "./Images/medical Care.svg";
 import Blood from "./Images/donateBlood.svg";
 import Money from "./Images/Donate.svg";
 import "../Pages/HomeScreen.css";
+import { Link } from 'react-router-dom'
 function Content() {
     return (
         <Container className="fluid" id="Main">
@@ -44,21 +45,21 @@ function Content() {
                         </p>
                     </CardColumns>
                     <CardDeck>
-                        <a href="#"><button type = "button" className="btn btn-lg btn-danger">Donate</button></a>
+                        <Link to="/blood-donate"><button type="button" className="btn btn-lg btn-danger">Donate</button></Link>
                     </CardDeck>
                 </Card>
             </div>
             <div className="About">
-                <h1 className = "Work-Top"> How We Work </h1>
+                <h1 className="Work-Top"> How We Work </h1>
                 <div className="Work">
                     <Card className="col-lg-4 bg-light text-dark" >
                         <CardImg src={Delivery} width="125px" height="125px" />
                         <h1 className="Request-Heading">
-                            Deliver Food 
+                            Deliver Food
                         </h1>
                         <CardColumns className="Request-Content">
                             <p>
-                                During this period of Lockdown, we provide Old Age Houses and The Elders living alone with Food and Medical Supplies and collaborate with Other Communities for the welfare of the Elders.  
+                                During this period of Lockdown, we provide Old Age Houses and The Elders living alone with Food and Medical Supplies and collaborate with Other Communities for the welfare of the Elders.
                             </p>
                         </CardColumns>
                     </Card>
@@ -81,7 +82,7 @@ function Content() {
                         </h1>
                         <CardColumns className="Request-Content">
                             <p>
-                                We also are involved in buying Ambulances for the local Hospital where the number of Ambulances are below Average from the amount of our donation leading to the welfare of the needy patients. 
+                                We also are involved in buying Ambulances for the local Hospital where the number of Ambulances are below Average from the amount of our donation leading to the welfare of the needy patients.
                             </p>
                         </CardColumns>
                     </Card>

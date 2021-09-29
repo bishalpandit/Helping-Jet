@@ -52,6 +52,33 @@ const orgs = [
         address: "North Dumdum, Kolkata-700032",
         lat: 22.635565,
         lon: 88.383808
+    },
+    {
+        key: 7,
+        name: "Life Care",
+        type: "BloodBank",
+        contact: "033 2345 939",
+        address: "North Dumdum, Kolkata-700032",
+        lat: 22.635565,
+        lon: 88.383808
+    },
+    {
+        key: 8,
+        name: "People's Blood Bank",
+        type: "BloodBank",
+        contact: "033 2345 939",
+        address: "North Dumdum, Kolkata-700032",
+        lat: 22.478790,
+        lon: 88.288490
+    },
+    {
+        key: 9,
+        name: "Lions Blood Bank",
+        type: "BloodBank",
+        contact: "033 2345 939",
+        address: "North Dumdum, Kolkata-700032",
+        lat: 22.579590,
+        lon: 88.360710
     }
 
 ]

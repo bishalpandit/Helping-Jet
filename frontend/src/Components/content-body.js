@@ -23,6 +23,7 @@ import Medical from "./Images/medical Care.svg";
 import Blood from "./Images/donateBlood.svg";
 import Money from "./Images/Donate.svg";
 import "../Pages/HomeScreen.css";
+import { Link } from 'react-router-dom'
 function Content() {
   return (
     <Container className="fluid" id="Main">
@@ -72,11 +73,11 @@ function Content() {
             </p>
           </CardColumns>
           <CardDeck>
-            <a href="#">
+            <Link to="/blood-donate">
               <button type="button" className="btn btn-lg btn-danger">
                 Donate
               </button>
-            </a>
+            </Link>
           </CardDeck>
         </Card>
       </div>

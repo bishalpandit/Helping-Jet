@@ -127,7 +127,7 @@ function Content() {
           <p>
             We are a Growing Community of large amount of people and other
             Communities who consents to our Mission and Ideology for the Welfare
-            of the Elderly People{" "}
+            of the Elderly People
           </p>
           <Image
             className="Community-image"
@@ -137,29 +137,29 @@ function Content() {
           />
         </div>
       </div>
-      <Carousel id="Review" className="bg-primary">
-        <CarouselItem className="items text-light">
+      <Carousel id="Review" className="bg-primary col-lg-12">
+        <CarouselItem className="items text-light col-lg-6">
           <p>
             This Website Helped me to find Medical Support by linking me to a
             Specific NGO and also they provided moral and social support to me.
           </p>
           <small>-A Helped Elder</small>
         </CarouselItem>
-        <CarouselItem className="items text-light">
+        <CarouselItem className="items text-light col-lg-6">
           <p>
             The volunteers and members of this team comes to our Old Age House
             to Meet us every month{" "}
           </p>
           <small>-A Resident of a Old Age House</small>
         </CarouselItem>
-        <CarouselItem className="items text-light">
+        <CarouselItem className="items text-light col-lg-6">
           <p>
             This Website helped me when i needed Financial support for my
             Surgery and they provided all Hospital charge
           </p>
           <small>-A Saved Elder</small>
         </CarouselItem>
-        <CarouselItem className="items text-light">
+        <CarouselItem className="items text-light col-lg-6">
           <p>
             They provided our Hospital with some Ambulances with the help of
             their Donation money and thanks to that our Hospital can work
@@ -168,6 +168,17 @@ function Content() {
           <small>-A Hospital Staff</small>
         </CarouselItem>
       </Carousel>
+      <Card className= "col-lg-12 Newsletter-card bg-dark text-light">
+        <h1 className="Newsletter-heading">Subscribe to Our Newsletter</h1>
+        <p className="col-lg-6">We have Started a small Initiative recently to bring you all the Good News of the day to you in these Negative days</p>
+        <CardColumns>
+        <form action="" method="" className="Newsletter-form col-lg-12">
+        <input type="text" placeholder="Enter Your Name" className="col-lg-12"></input>
+        <input type="email" placeholder="Enter Your Email" className="col-lg-12"></input>
+        <input type="submit" value="Submit" className="btn btn-lg btn-success"></input>
+        </form>
+        </CardColumns>
+      </Card>
     </Container>
   );
 }

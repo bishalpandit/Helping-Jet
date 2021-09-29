@@ -1,35 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.ngo, .blood-bank {
-    font-family: 'Ubuntu', sans-serif;
+.ngo,
+.blood-bank {
+  font-family: "Ubuntu", sans-serif;
 }
 
+.para {
+    padding: 4rem 1rem;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.para p {
+    text-align: justify;
+}
 
 /* Leaflet Marker Popup */
 
 .leaflet-popup-content-wrapper {
-    padding: 0;
-    overflow: hidden;
+  padding: 0;
+  overflow: hidden;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content {
-    margin: 0;
+  margin: 0;
 }
 .leaflet-popup-content-wrapper h4 {
-    padding: 16px;
-    background: #1da3b4;
-    color: #fff;
-    font-size: 16px;
+  padding: 16px;
+  background: #1da3b4;
+  color: #fff;
+  font-size: 16px;
 }
 .leaflet-popup-content-wrapper p {
-    padding: 0 16px;
-    font-size: 14px;
-    margin-bottom: 14px;
+  padding: 0 16px;
+  font-size: 14px;
+  margin-bottom: 14px;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content .phone-number {
-    padding: 16px;
-    padding-top: 0;
+  padding: 16px;
+  padding-top: 0;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content .phone-number a {
-    color: #1da3b4;
-    font-size: 14px;
+  color: #1da3b4;
+  font-size: 14px;
 }

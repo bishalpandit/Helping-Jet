@@ -1,4 +1,3 @@
-import react from "react";
 import { Container } from "react-bootstrap";
 import "../Pages/HomeScreen.css";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";

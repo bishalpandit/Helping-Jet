@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import logo from "./Images/logo.png";
+import "../Pages/HomeScreen.css";
 
 export default function Navibar() {
     return (

@@ -1,21 +1,14 @@
 import React from "react";
+import CustomCard from "./Card";
 import {
-  Navbar,
-  Carousel,
-  CarouselItem,
-  Nav,
   Container,
-  Row,
-  Col,
-  Card,
-  Button,
-  Image,
-  CardImg,
-  CardDeck,
-  CardGroups,
-  CardColumns,
 } from "react-bootstrap";
+import Work from "./Work";
+import NewsletterCard from "./NewsletterCard";
+import CarouselCard from "./CarouselCard";
 import Mission from "./Images/content-mission.svg";
+import CommunityCard from "./Community";
+import MissionCard from "./Mission";
 import Community from "./Images/helping-about.svg";
 import Delivery from "./Images/deliveries.svg";
 import Hospital from "./Images/Hospital.svg";
@@ -23,162 +16,41 @@ import Medical from "./Images/medical Care.svg";
 import Blood from "./Images/donateBlood.svg";
 import Money from "./Images/Donate.svg";
 import "../Pages/HomeScreen.css";
-import { Link } from 'react-router-dom'
 function Content() {
   return (
     <Container className="fluid" id="Main">
-      <div className="Mission">
-        <h1>Our Mission</h1>
-        <div className="Mission-content">
-          <Image
-            className="Mission-image"
-            src={Mission}
-            width="250px"
-            height="250px"
-          />
-          <p>
-            Our Mission is to make a safer Environment for the living of Elder
+      <MissionCard heading= "Our Mission" content="Our Mission is to make a safer Environment for the living of Elder
             People where we provide help to them by Connecting them to different
             particular NGO's for their welfare and we also provide 50% of our
-            Donation amount to the needy Elders.{" "}
-          </p>
-        </div>
-      </div>
+            Donation amount to the needy Elders."  image={Mission} />
       <div className="Request">
-        <Card className="col-lg-4 bg-light text-dark cards">
-          <CardImg src={Money} width="125px" height="125px" />
-          <h1 className="Request-Heading">Fund Donation</h1>
-          <CardColumns className="Request-Content">
-            <p>
-              Please feel free to donate the smallest amount of money for the
+        <CustomCard Image={Money} heading="Fund Donation" content=" Please feel free to donate the smallest amount of money for the
               cause of Elders, it can impact many lives and can help the ones in
-              need.
-            </p>
-          </CardColumns>
-          <CardDeck>
-            <a href="https://pages.razorpay.com/pl_I2YcFN8rBp9lEC/view">
-              <button type="button" className="btn btn-lg btn-primary">
-                Donate
-              </button>
-            </a>
-          </CardDeck>
-        </Card>
-        <Card className="col-lg-4 bg-light text-dark cards">
-          <CardImg src={Blood} width="125px" height="125px" />
-          <h1 className="Request-Heading">Blood Donation</h1>
-          <CardColumns className="Request-Content">
-            <p>
-              Donate Blood at your nearest place. Your Donated Blood could save
-              a life, Be a saviour and Donate your blood for the people in need.
-            </p>
-          </CardColumns>
-          <CardDeck>
-            <Link to="/blood-donate">
-              <button type="button" className="btn btn-lg btn-danger">
-                Donate
-              </button>
-            </Link>
-          </CardDeck>
-        </Card>
+              need." button_name="Donate" link="https://pages.razorpay.com/pl_I2YcFN8rBp9lEC/view" button="btn btn-lg btn-primary"></CustomCard> 
+        <CustomCard Image={Blood} heading="Blood Donation" content ="Donate Blood at your nearest place. Your Donated Blood could save
+              a life, Be a saviour and Donate your blood for the people in need." button_name="Donate" link="/blood-donate" button="btn btn-lg btn-danger"></CustomCard>
       </div>
       <div className="About">
         <h1 className="Work-Top"> How We Work </h1>
         <div className="Work">
-          <Card className="col-lg-4 bg-light text-dark cards">
-            <CardImg src={Delivery} width="125px" height="125px" />
-            <h1 className="Request-Heading">Deliver Food</h1>
-            <CardColumns className="Request-Content">
-              <p>
-                During this period of Lockdown, we provide Old Age Houses and
+          <Work image ={Delivery} heading="Deliver Food" content="During this period of Lockdown, we provide Old Age Houses and
                 The Elders living alone with Food and Medical Supplies and
                 collaborate with Other Communities for the welfare of the
-                Elders.
-              </p>
-            </CardColumns>
-          </Card>
-          <Card className="col-lg-4 bg-light text-dark cards">
-            <CardImg src={Medical} width="125px" height="125px" />
-            <h1 className="Request-Heading">Provide Support</h1>
-            <CardColumns className="Request-Content">
-              <p>
-                We provide support to Elders financially, medically and
+                Elders." />
+          <Work image ={Medical} heading ="Provide Support" content="We provide support to Elders financially, medically and
                 socically by connecting to their nearest NGO and our Volunteers
                 inspects the working of the NGO once in a week and also supplies
-                medicines and Ration.
-              </p>
-            </CardColumns>
-          </Card>
-          <Card className="col-lg-4 bg-light text-dark cards">
-            <CardImg src={Hospital} width="125px" height="125px" />
-            <h1 className="Request-Heading">Ambulances</h1>
-            <CardColumns className="Request-Content">
-              <p>
-                We also are involved in buying Ambulances for the local Hospital
+                medicines and Ration." />
+          <Work image = {Hospital} heading="Ambulances" content="We also are involved in buying Ambulances for the local Hospital
                 where the number of Ambulances are below Average from the amount
-                of our donation leading to the welfare of the needy patients.
-              </p>
-            </CardColumns>
-          </Card>
+                of our donation leading to the welfare of the needy patients." />
         </div>
       </div>
-      <div className="Community">
-        <h1>Community</h1>
-        <div className="Community-content">
-          <p>
-            We are a Growing Community of large amount of people and other
+      <CommunityCard heading="Community" content="We are a Growing Community of large amount of people and other
             Communities who consents to our Mission and Ideology for the Welfare
-            of the Elderly People
-          </p>
-          <Image
-            className="Community-image"
-            src={Community}
-            width="250px"
-            height="250px"
-          />
-        </div>
-      </div>
-      <Carousel id="Review" className="bg-primary col-lg-12">
-        <CarouselItem className="items text-light col-lg-6">
-          <p>
-            This Website Helped me to find Medical Support by linking me to a
-            Specific NGO and also they provided moral and social support to me.
-          </p>
-          <small>-A Helped Elder</small>
-        </CarouselItem>
-        <CarouselItem className="items text-light col-lg-6">
-          <p>
-            The volunteers and members of this team comes to our Old Age House
-            to Meet us every month{" "}
-          </p>
-          <small>-A Resident of a Old Age House</small>
-        </CarouselItem>
-        <CarouselItem className="items text-light col-lg-6">
-          <p>
-            This Website helped me when i needed Financial support for my
-            Surgery and they provided all Hospital charge
-          </p>
-          <small>-A Saved Elder</small>
-        </CarouselItem>
-        <CarouselItem className="items text-light col-lg-6">
-          <p>
-            They provided our Hospital with some Ambulances with the help of
-            their Donation money and thanks to that our Hospital can work
-            Efficiently in times of Emergency.
-          </p>
-          <small>-A Hospital Staff</small>
-        </CarouselItem>
-      </Carousel>
-      <Card className= "col-lg-12 Newsletter-card bg-dark text-light">
-        <h1 className="Newsletter-heading">Subscribe to Our Newsletter</h1>
-        <p className="col-lg-6">We have Started a small Initiative recently to bring you all the Good News of the day to you in these Negative days</p>
-        <CardColumns>
-        <form action="" method="" className="Newsletter-form col-lg-12">
-        <input type="text" placeholder="Enter Your Name" className="col-lg-12"></input>
-        <input type="email" placeholder="Enter Your Email" className="col-lg-12"></input>
-        <input type="submit" value="Submit" className="btn btn-lg btn-success"></input>
-        </form>
-        </CardColumns>
-      </Card>
+            of the Elderly People." image={Community} />
+      <CarouselCard/>
+      <NewsletterCard/>
     </Container>
   );
 }

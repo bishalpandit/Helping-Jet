@@ -3,7 +3,8 @@ import Navibar from '../Components/Navbar'
 import Map from '../Components/Map'
 import BloodDonate from '../Components/Images/bloodDonation.svg'
 import './MapsPage.css'
-import { Navbar, Nav, Container, Row, Col, Card, Button, Image } from 'react-bootstrap'
+import "./HomeScreen.css";
+import { Container, Row, Col,Image } from 'react-bootstrap'
 
 export default function BloodDonation() {
     return (

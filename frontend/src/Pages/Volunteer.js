@@ -1,10 +1,11 @@
 import React from 'react'
-import { Navbar, Nav, Container, Row, Col, Card, Button, Image } from 'react-bootstrap'
+import {Container, Row, Col, Image } from 'react-bootstrap'
 import HelpingOld1 from '../Components/Images/helping-old-1.svg'
 import HelpingOld2 from '../Components/Images/helping-old-2.svg'
 import Navibar from '../Components/Navbar'
 import './Volunteer.css'
 import { AiOutlineArrowRight } from "react-icons/ai";
+import "./HomeScreen.css";
 
 export default function Volunteer() {
     return (
@@ -25,8 +26,8 @@ export default function Volunteer() {
 
                     </Col>
                     <Col sm={12} md={6} lg={6} xl={6}>
-                        <Image fluid src={HelpingOld1} style={{ height: 500 }, { width: 500 }} />
-                        <Image fluid src={HelpingOld2} style={{ height: 500 }, { width: 500 }} />
+                        <Image fluid src={HelpingOld1} style={{ height: 500 } , { width: 500 }} />
+                        <Image fluid src={HelpingOld2} style={{ height: 500 } , { width: 500 }} />
                     </Col>
                 </Row>
             </Container>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
-import { Navbar, Nav, Container, Row, Col, Card, Button, Image } from 'react-bootstrap'
 import L from 'leaflet';
 import NGOicon from './Images/Icons/building.png'
 import OldAgeHomeicon from './Images/Icons/grandfather.png'
 import BloodBankicon from './Images/Icons/blood-bank.png'
 import orgs from '../Data/orgs'
 import 'leaflet/dist/leaflet.css'
+import "../Pages/HomeScreen.css";
 
 const NGO = new L.Icon({
     iconUrl: NGOicon,

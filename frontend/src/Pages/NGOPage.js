@@ -3,6 +3,7 @@ import Map from '../Components/Map'
 import './MapsPage.css'
 import 'leaflet/dist/leaflet.css';
 import Navibar from '../Components/Navbar';
+import "./HomeScreen.css";
 
 
 export default function MapsPage() {

@@ -1,7 +1,6 @@
 import React from 'react'
-import { Navbar, Nav, Container, Row, Col, Card, Button, Image ,CardDeck ,CardColumns ,CardImg } from 'react-bootstrap'
+import { Container, Card,CardImg } from 'react-bootstrap'
 import Foot from "./Footer";
-import Collaboration from "./Images/collaboration.svg";
 import Thank from "./Images/thank_you.svg";
 import Navibar from "./Navbar";
 import "../Pages/HomeScreen.css";

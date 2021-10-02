@@ -102,7 +102,6 @@ p {
   font: 20px;
   font-weight: 500;
   text-align: left;
-  /* color:red; */
   padding: 9%;
 }
 .Request-Heading {
@@ -219,9 +218,6 @@ p {
     font-size: 24px;
     font-weight: 700;
   }
-  /* .header-img{
-    flex-direction: column;
-  } */
   .img2{
     margin:0;
   }

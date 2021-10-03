@@ -78,7 +78,34 @@ const orgs = [
         contact: "033 2345 939",
         address: "North Dumdum, Kolkata-700032",
         lat: 22.579590,
-        lon: 88.360710
+        lon: 88.60710
+    },
+    {
+        key: 10,
+        name: "Park Blue Print",
+        type: "MedicineShop",
+        contact: "098303 08087",
+        address: "Park Street Kolkata-700016",
+        lat: 22.560100,
+        lon: 88.350730
+    },
+    {
+        key: 11,
+        name: "Dhanwantary Pharmacy",
+        type: "MedicineShop",
+        contact: "098305 84845",
+        address: " Bhowanipore Kolkata-700020",
+        lat: 22.538210,
+        lon: 88.344850
+    },
+    {
+        key: 12,
+        name: "Retail Medicine Shop",
+        type: "MedicineShop",
+        contact: "083359 15772",
+        address: "Kakurgachi Kolkata-700013",
+        lat: 22.580150,
+        lon: 88.391080
     }
 
 ]

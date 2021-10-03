@@ -3,6 +3,7 @@ import NGOPage from './Pages/NGOPage';
 import Thanks from './Pages/ThanksPage';
 import BloodDonation from './Pages/BloodDonation';
 import Volunteer from './Pages/Volunteer';
+import Medicine from "./Pages/Medicine"
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import React from "react"
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/thanks" component={Thanks} />
         <Route path="/blood-donate" component={BloodDonation} />
         <Route path="/volunteer" component={Volunteer} />
+        <Route path="/medicine" component={Medicine}/>
       </Router>
     </div>
   );

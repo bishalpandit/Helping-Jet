@@ -4,6 +4,7 @@ import L from 'leaflet';
 import NGOicon from './Images/Icons/building.png'
 import OldAgeHomeicon from './Images/Icons/grandfather.png'
 import BloodBankicon from './Images/Icons/blood-bank.png'
+import Medicineicon from './Images/Icons/medicine.png'
 import orgs from '../Data/orgs'
 import 'leaflet/dist/leaflet.css'
 import "../Pages/HomeScreen.css";
@@ -25,7 +26,10 @@ const BloodBank = new L.Icon({
     iconSize: [40, 50]
 
 });
-
+const Medicine = new L.Icon({
+    iconUrl: Medicineicon,
+    iconSize: [40, 40]
+})
 const Empty = new L.Icon({
     iconUrl: BloodBankicon,
     iconSize: [0, 0]
@@ -58,7 +62,7 @@ export default function Map({ page }) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {orgs.map((org) => (
-                <Marker position={[org.lat, org.lon]} icon={page === "NGO" ? (org.type === "NGO"  ? NGO : (org.type === "OldAgeHome" ? OldAgeHome : Empty)) : (org.type === "BloodBank" ? BloodBank : Empty)} >
+                <Marker position={[org.lat, org.lon]} icon={page === "NGO" ? (org.type === "NGO" ? NGO : (org.type === "OldAgeHome" ? OldAgeHome : Empty)) : (org.type === "BloodBank" ? BloodBank : org.type == "MedicineShop" ? Medicine : Empty)} >
                     <Popup className="leaflet-popup-content-wrapper">
                         <div className="leaflet-popup-content">
                             <h4>{org.name}</h4>

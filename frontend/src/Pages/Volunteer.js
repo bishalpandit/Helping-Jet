@@ -1,11 +1,10 @@
 import React from 'react'
-import { Container, Card, CardGroup, Image } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
 import HelpingOld1 from '../Components/Images/helping-old-1.svg'
 import HelpingOld2 from '../Components/Images/helping-old-2.svg'
 import Navibar from '../Components/Navbar'
 import './Volunteer.css'
 import VolunteerCard from "../Components/Volunteer";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import Footer from "../Components/Footer";
 export default function Volunteer() {
     return (

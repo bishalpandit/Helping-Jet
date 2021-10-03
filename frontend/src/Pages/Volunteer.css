@@ -10,6 +10,7 @@
 .VolunteerCard{
     background-color: #192a56;
     padding: 3%;
+    height:400px;
 }
 .VolunteerCard h2{
     font-weight: 700;

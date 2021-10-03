@@ -7,7 +7,7 @@ import {
 import "../Pages/HomeScreen.css";
 function Work(props){
     return(
-    <Card className="col-lg-6 bg-light text-dark cards">
+    <Card className="col-lg-4 bg-light text-dark cards">
             <CardImg src={props.image} width="125px" height="125px" />
             <h1 className="Request-Heading">{props.heading}</h1>
             <CardColumns className="Request-Content">

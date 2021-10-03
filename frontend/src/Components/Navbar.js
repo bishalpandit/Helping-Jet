@@ -26,6 +26,9 @@ export default function Navibar() {
                             <LinkContainer to="/ngo-oldage">
                                 <Nav.Link>Nearby NGO</Nav.Link>
                             </LinkContainer>
+                            <LinkContainer to="/medicine">
+                                <Nav.Link>Medicine Shops</Nav.Link>
+                            </LinkContainer>
                         </Nav>
                         <Nav className="ms-auto">
                             <Nav.Link href="https://pages.razorpay.com/pl_I2YcFN8rBp9lEC/view"><Button className="rounded-pill btn-lg btn-info light">Donate</Button></Nav.Link>

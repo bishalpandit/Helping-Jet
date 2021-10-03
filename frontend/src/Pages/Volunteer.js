@@ -1,35 +1,38 @@
 import React from 'react'
-import {Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Card, CardGroup, Image } from 'react-bootstrap'
 import HelpingOld1 from '../Components/Images/helping-old-1.svg'
 import HelpingOld2 from '../Components/Images/helping-old-2.svg'
 import Navibar from '../Components/Navbar'
 import './Volunteer.css'
+import VolunteerCard from "../Components/Volunteer";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import "./HomeScreen.css";
-
+import Footer from "../Components/Footer";
 export default function Volunteer() {
     return (
         <div>
             <Navibar />
-            <h2 className="text-center my-4 ">Our Volunteer Work and Recreational Activities for Elderly People</h2>
             <Container fluid>
-                <Row>
-                    <Col className="para-wrap  text-center" sm={12} md={6} lg={6} xl={6}>
-                        <h4 className="my-4  text-center">  <AiOutlineArrowRight size="1em" /> Recreational Activites</h4>
-                        <p >We organise recreational activites as well as oragnise events where we invite senior citizens to participate in activities such as Bird Watching, Sports, Gardening, Mental Exercise,etc.</p>
-                        <h4 className="my-4 text-center"> <AiOutlineArrowRight size="1em" /> Helping Elderly People to Learn New Technologies</h4>
-                        <p >As elderly people have difficult to adapt to new technology like using smartphones, internet, etc. So, our volunteers teach elderlies simple things such as how to save phone numbers, how to send a message, how to take advantage of internet, etc.</p>
-                        <h4 className="my-4  text-center"> <AiOutlineArrowRight size="1em" /> Visiting Old Age Homes</h4>
-                        <p >We visit old age homes to bring smile to their faces by taking gifts and taking them on short tours around the city.</p>
-                        <h4 className="my-4 text-center"> <AiOutlineArrowRight size="1em" /> Arranging Fun Talk Sessions</h4>
-                        <p >Based on the interest of elder people, We arrange talk sessions on interesting topics to mitigate their loneliness.</p>
+                <Container>
+                    <h1 className="text-center mt-5 ">Helping Needy Elderly for their Welfare and Empowering them.</h1>
+                    <div className="header-img">
+                        <Image className="col-lg-6 header-img img-fluid img1" src={HelpingOld1} width="450px" height="450px"></Image>
+                        <Image className="col-lg-6 header-img img-fluid img2" src={HelpingOld2} width="450px" height="450px"></Image>
+                    </div>
+                </Container>
 
-                    </Col>
-                    <Col sm={12} md={6} lg={6} xl={6}>
-                        <Image fluid src={HelpingOld1} style={{ height: 500 } , { width: 500 }} />
-                        <Image fluid src={HelpingOld2} style={{ height: 500 } , { width: 500 }} />
-                    </Col>
-                </Row>
+                    <h2 className="text-center my-4 ">Our Volunteer Work and Recreational Activities for Elderly People</h2>
+                <div className="fluid col-lg-12 volunteer" >
+                    <VolunteerCard className="VolunteerCard" heading="Recreational Activites" content="We organise recreational activites as well as oragnise events where we invite senior citizens to participate in activities such as Bird Watching, Sports, Gardening, Mental Exercise,etc." />
+
+                    <VolunteerCard className="VolunteerCard" heading="Helping Elders to Learn New Things" content="Our volunteers teach elderlies about simple things about Any Intersting topic that will help their day to day life such as how to send a message, how to take advantage of internet, etc." />
+                </div>
+                <div className="fluid col-lg-12 volunteer" >
+                    <VolunteerCard className="VolunteerCard"  heading="Arranging Fun Talk Sessions" content="Based on the interest of elder people, We arrange talk sessions on interesting topics to mitigate their loneliness." />
+
+                    <VolunteerCard className="VolunteerCard"  heading="Visiting Old Age Homes" content="We visit old age homes to bring smile to their faces by taking gifts and taking them on short tours around the city." />
+
+                </div>
+                <Footer></Footer>
             </Container>
         </div>
     )

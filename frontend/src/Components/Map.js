@@ -62,7 +62,7 @@ export default function Map({ page }) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {orgs.map((org) => (
-                <Marker position={[org.lat, org.lon]} icon={page === "NGO" ? (org.type === "NGO" ? NGO : (org.type === "OldAgeHome" ? OldAgeHome : Empty)) : (org.type === "BloodBank" ? BloodBank : org.type == "MedicineShop" ? Medicine : Empty)} >
+                <Marker position={[org.lat, org.lon]} icon={page === "NGO" ? (org.type === "NGO" ? NGO : (org.type === "OldAgeHome" ? OldAgeHome : Empty)) : (org.type === "BloodBank" && page === "BloodBank"  ? BloodBank : org.type == "MedicineShop" && page === "MedicineShop" ? Medicine : Empty)} >
                     <Popup className="leaflet-popup-content-wrapper">
                         <div className="leaflet-popup-content">
                             <h4>{org.name}</h4>

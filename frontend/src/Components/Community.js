@@ -5,7 +5,7 @@ import {
 import "../Pages/HomeScreen.css";
 function  Community(props){
     return(
-        <div className="Community">
+        <div data-aos={props.animate} className="Community">
         <h1>{props.heading}</h1>
         <div className="Community-content">
           <p>

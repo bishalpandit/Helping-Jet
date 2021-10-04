@@ -3,7 +3,7 @@ import {Image} from "react-bootstrap";
 import "../Pages/HomeScreen.css";
 function Mission(props){
     return(
-        <div className="Mission">
+        <div data-aos={props.animate} className="Mission">
         <h1>{props.heading}</h1>
         <div className="Mission-content">
           <Image

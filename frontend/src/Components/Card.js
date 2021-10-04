@@ -8,7 +8,7 @@ import {
 import "../Pages/HomeScreen.css";
 function  CustomCard(props){
     return(
-    <Card className="col-lg-4 bg-light text-dark cards">
+    <Card data-aos={props.animate}  className="col-lg-4 bg-light text-dark cards">
           <CardImg src={props.Image} width="125px" height="125px" />
           <h1 className="Request-Heading">{props.heading}</h1>
           <CardColumns className="Request-Content">

@@ -6,7 +6,7 @@ import {
 import "../Pages/HomeScreen.css";
 function CarouselCard() {
     return (
-        <Carousel id="Review" className="bg-primary col-lg-12">
+        <Carousel data-aos="zoom-out" id="Review" className="bg-primary col-lg-12">
             <CarouselItem className="items text-light col-lg-6">
                 <p>
                     This Website Helped me to find Medical Support by linking me to a
